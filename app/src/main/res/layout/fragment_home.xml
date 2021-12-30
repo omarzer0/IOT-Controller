@@ -22,50 +22,65 @@
     <!--    </com.google.android.material.textfield.TextInputLayout>-->
 
     <Button
-        android:id="@+id/btn1_btn"
+        android:id="@+id/motor_on_btn"
         style="@style/roundButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_12sdp"
-        android:text="@string/change_ip_url"
-        app:layout_constraintEnd_toStartOf="@+id/btn2_btn"
+        android:layout_marginTop="@dimen/_46sdp"
+        android:text="motor On"
+        app:layout_constraintEnd_toStartOf="@+id/motor_off_btn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn2_btn"
+        android:id="@+id/motor_off_btn"
         style="@style/roundButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/change_ip_url"
-        app:layout_constraintBottom_toBottomOf="@+id/btn1_btn"
+        android:text="motor off"
+        app:layout_constraintBottom_toBottomOf="@+id/motor_on_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn1_btn"
-        app:layout_constraintTop_toTopOf="@+id/btn1_btn" />
+        app:layout_constraintStart_toEndOf="@+id/motor_on_btn"
+        app:layout_constraintTop_toTopOf="@+id/motor_on_btn" />
 
     <Button
-        android:id="@+id/btn3_btn"
+        android:id="@+id/motor_back_btn"
         style="@style/roundButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_12sdp"
-        android:text="@string/change_ip_url"
-        app:layout_constraintTop_toBottomOf="@+id/btn1_btn"
-        tools:layout_editor_absoluteX="52dp" />
+        android:text="motor back"
+        app:layout_constraintEnd_toStartOf="@+id/motor_right_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/motor_on_btn" />
 
     <Button
-        android:id="@+id/btn4_btn"
+        android:id="@+id/motor_right_btn"
         style="@style/roundButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/change_ip_url"
-        app:layout_constraintBottom_toBottomOf="@+id/btn3_btn"
+        android:text="motor right"
+        app:layout_constraintBottom_toBottomOf="@+id/motor_back_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn3_btn"
-        app:layout_constraintTop_toTopOf="@+id/btn3_btn" />
+        app:layout_constraintStart_toEndOf="@+id/motor_back_btn"
+        app:layout_constraintTop_toTopOf="@+id/motor_back_btn" />
+
+
+    <Button
+        android:id="@+id/motor_left_btn"
+        style="@style/roundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="motor left"
+        app:layout_constraintEnd_toEndOf="@+id/motor_right_btn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/motor_back_btn"
+        app:layout_constraintTop_toBottomOf="@+id/motor_back_btn" />
 
     <!--    <Button-->
     <!--        android:id="@+id/change_base_url_btn"-->

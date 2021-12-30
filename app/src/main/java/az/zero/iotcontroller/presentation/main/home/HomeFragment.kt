@@ -23,7 +23,28 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     }
 
     private fun handleClicks() {
+        binding.apply {
+            motorOnBtn.setOnClickListener {
+                viewModel.motorON()
+            }
 
+            motorOffBtn.setOnClickListener {
+                viewModel.motorOFF()
+            }
+
+            motorBackBtn.setOnClickListener {
+                viewModel.motorBack()
+            }
+
+            motorRightBtn.setOnClickListener {
+                viewModel.motorRight()
+            }
+
+            motorLeftBtn.setOnClickListener {
+                viewModel.motorOLeft()
+            }
+
+        }
     }
 
 

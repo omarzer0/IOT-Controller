@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
 const val timeOut = 35L
-const val BASE_URL = ""
+const val BASE_URL = "http://192.168.43.12"
 
 @Module
 @InstallIn(SingletonComponent::class)
