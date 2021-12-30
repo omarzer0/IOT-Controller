@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IOT controller</string>
+    <string name="ip_address_base_url">IP address/base URL</string>
+    <string name="change_ip_url">Change IP/URL</string>
+</resources>
